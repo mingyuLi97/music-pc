@@ -1,2 +1,5 @@
-# music-pc
-网易云音乐 PC 版本
+# 仿网易云音乐官网
+
+官网：https://music.163.com/
+
+后端文档：https://neteasecloudmusicapi.vercel.app/
