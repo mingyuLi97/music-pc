@@ -49,10 +49,23 @@ const links = [
   {
     content: '下载客户端',
     hot: true,
+    onClick() {
+      router.push('/download');
+    },
   },
 ];
 
 const activeIndex = ref(0);
+router.afterEach((to) => {
+  const p = to.fullPath;
+  if (p.startsWith('/discover')) {
+    activeIndex.value = 0;
+  } else if (p.startsWith('/my-music')) {
+    activeIndex.value = 1;
+  } else if (p.startsWith('/friends')) {
+    activeIndex.value = 2;
+  }
+});
 </script>
 
 <style lang="scss" scoped>
@@ -81,6 +94,7 @@ const activeIndex = ref(0);
       position: absolute;
       bottom: 0;
       left: 50%;
+      transform: translateX(-50%);
     }
   }
 
