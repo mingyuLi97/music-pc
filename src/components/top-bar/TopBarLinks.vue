@@ -64,6 +64,8 @@ router.afterEach((to) => {
     activeIndex.value = 1;
   } else if (p.startsWith('/friends')) {
     activeIndex.value = 2;
+  } else if (p.startsWith('/download')) {
+    activeIndex.value = 5;
   }
 });
 </script>
