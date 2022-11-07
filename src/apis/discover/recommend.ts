@@ -5,3 +5,15 @@ export function getBanner() {
     params: {},
   });
 }
+/**
+ * 获取推荐歌单
+ * @param {*} limit
+ * @return {*}
+ */
+export function getRecommendPlaylist(limit = 30) {
+  return http.get<any, any>('/personalized', {
+    params: {
+      limit,
+    },
+  });
+}
