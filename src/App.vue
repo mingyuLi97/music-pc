@@ -29,6 +29,5 @@ getHomepage().then(console.log);
 .page_main {
   width: $page-main-width;
   margin: 0 auto;
-  background-color: pink;
 }
 </style>

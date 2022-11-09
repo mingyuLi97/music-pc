@@ -1,3 +1,4 @@
+import type { IPersonalizedResponse } from '@/types';
 import http from '@/utils/axios';
 
 export function getBanner() {
@@ -11,7 +12,7 @@ export function getBanner() {
  * @return {*}
  */
 export function getRecommendPlaylist(limit = 30) {
-  return http.get<any, any>('/personalized', {
+  return http.get<any, IPersonalizedResponse>('/personalized', {
     params: {
       limit,
     },

@@ -1,17 +1,13 @@
 <template>
   <div class="recommend-main">
-    <RecommendTitle
-      title="热门推荐"
-      @click-title="onClickTitle"
-      @click-more="onClickMore"
-    >
-      123
-    </RecommendTitle>
+    <HotRecommend />
     recommend-main
   </div>
 </template>
 
 <script setup lang="ts">
+import HotRecommend from './main/HotRecommend.vue';
+
 import RecommendTitle from './RecommendTitle.vue';
 
 function onClickTitle() {
