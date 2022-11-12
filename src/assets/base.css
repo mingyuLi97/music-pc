@@ -25,3 +25,7 @@ body {
 .pointer {
   cursor: pointer;
 }
+
+.flex {
+  display: flex;
+}

@@ -1,11 +1,11 @@
 <template>
   <div class="hot-recommend">
-    <RecommendTitle
+    <MainTitle
       title="热门推荐"
       @click-title="onClickTitle"
       @click-more="onClickMore"
     >
-    </RecommendTitle>
+    </MainTitle>
     <div class="playlist-grid">
       <div
         v-for="(item, index) in playlistArr"
@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import RecommendTitle from '../RecommendTitle.vue';
+import MainTitle from './MainTitle.vue';
 import PlaylistCover from '@/components/PlaylistCover.vue';
 import apis from '@/apis';
 import { reactive } from 'vue';

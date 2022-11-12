@@ -1,6 +1,6 @@
 <template>
   <div class="new-album">
-    <RecommendTitle
+    <MainTitle
       title="新碟上架"
       @click-title="onClickTitle"
       @click-more="onClickMore"
@@ -27,7 +27,7 @@
 import apis from '@/apis';
 import AlbumCover from '@/components/AlbumCover.vue';
 import type { IAlbumCoverProps } from '@/components/AlbumCover.vue';
-import RecommendTitle from '../RecommendTitle.vue';
+import MainTitle from './MainTitle.vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import { reactive } from 'vue';

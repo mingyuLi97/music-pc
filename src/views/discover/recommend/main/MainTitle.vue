@@ -1,5 +1,5 @@
 <template>
-  <div class="recommend-title">
+  <div class="recommend-main-title">
     <h2 @click="emits('click-title')">{{ props.title }}</h2>
     <div class="slot">
       <slot></slot>
@@ -23,7 +23,7 @@ const emits = defineEmits<IEmits>();
 </script>
 
 <style lang="scss" scoped>
-.recommend-title {
+.recommend-main-title {
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid #c10d0c;

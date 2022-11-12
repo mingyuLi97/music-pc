@@ -23,7 +23,7 @@ function onClickMore() {
 
 <style lang="scss" scoped>
 .recommend-main {
-  width: 732px;
+  width: 730px;
   padding: 20px;
   box-sizing: border-box;
   border: 1px solid #d3d3d3;
