@@ -10,8 +10,6 @@
 import HotRecommend from './HotRecommend.vue';
 import NewestAlbum from './NewestAlbum.vue';
 
-import RecommendTitle from '../RecommendTitle.vue';
-
 function onClickTitle() {
   console.log(`[RecommendMain] onClickTitle`);
 }
