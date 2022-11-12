@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="hot-recommend">
     <RecommendTitle
       title="热门推荐"
       @click-title="onClickTitle"
@@ -34,7 +34,7 @@ import RecommendTitle from '../RecommendTitle.vue';
 import PlaylistCover from '@/components/PlaylistCover.vue';
 import apis from '@/apis';
 import { reactive } from 'vue';
-import type { PersonalizedPlaylistItem } from '@/types';
+import type { PersonalizedPlaylistItem } from '@/types/apis/discover/recommend';
 
 const playlistArr = reactive<PersonalizedPlaylistItem[]>([]);
 
@@ -61,12 +61,11 @@ function playPlaylist(item: PersonalizedPlaylistItem) {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin: 20px 0 10px 0;
   .playlist-grid-item {
     // flex: 25%;
     height: 204px;
     width: 140px;
-    margin-bottom: 40px;
   }
   .playlist-name {
     color: #000;

@@ -1,9 +1,5 @@
 <template>
-  <div
-    v-show="isShow && bannerList.length"
-    class="banner"
-    :style="bannerBgStyle"
-  >
+  <div v-show="isShow" class="banner" :style="bannerBgStyle">
     <div class="main-container">
       <div class="banner-imgs">
         <TransitionGroup name="fade" tag="ul">

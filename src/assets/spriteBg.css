@@ -1,0 +1,9 @@
+/* 精灵图背景 */
+
+.bg-icon-all {
+  background: url(./imgs/iconall.png) no-repeat;
+}
+
+.bg-discover-recommend {
+  background: url(./imgs/discover_recommend.png) no-repeat;
+}

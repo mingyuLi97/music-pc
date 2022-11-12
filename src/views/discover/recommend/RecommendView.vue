@@ -7,8 +7,8 @@
 
 <script setup lang="ts">
 import apis from '@/apis';
-import RecommendMain from './RecommendMain.vue';
-import RecommendSide from './RecommendSide.vue';
+import RecommendMain from './main/RecommendMain.vue';
+import RecommendSide from './side/RecommendSide.vue';
 
 initData();
 
@@ -22,5 +22,6 @@ async function initData() {
 .recommend-container {
   width: 100%;
   display: flex;
+  box-sizing: border-box;
 }
 </style>
